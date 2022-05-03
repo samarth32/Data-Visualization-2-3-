@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<canvas id="mycanvas" width="2000" height="1000" style="border:1px solid green;"></canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("mycanvas");
+			var ctx=canvas.getContext("2d");
+			//Red Empty Rectangle
+			ctx.strokeStyle="red";
+			ctx.strokeRect(5,5,100,100);
+			ctx.stroke();
+			//Green Filled Rect
+			ctx.fillStyle="green";
+			ctx.fillRect(150,5,100,100);
+			ctx.stroke();
+			//Blue empty rect with line dash
+			ctx.setLineDash([5]);
+			ctx.strokeStyle="blue";
+			//ctx.translate(70,70);
+			//ctx.rotate(10*Math.PI/180);
+			ctx.strokeRect(00,100,100,100);
+			//Clear Rect within green rect
+			ctx.clearRect(170,10,50,50);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="canvasjs.min.js"> </script>
+		<script >
+			window.onload = function ()
+			{
+			var chart = new CanvasJS.Chart("chartContainer",
+			{
+			title:{text: "Top Oil Reserves"},
+			axisX:{title: "Countries"},
+			axisY:{title: "Reserves(MMbbl)"},
+			data: [{
+			type:"column", //bar, doughnut, line, pie
+			showInLegend:true,
+			legendText:"MMbbl = one million barrels",
+			dataPoints: [
+			{ y: 200878, label: "Venezuela" },
+			{ y: 196455, label: "Saudi" },
+			{ y: 179709, label: "Canada" },
+			{ y: 168400, label: "Iran" },
+			{ y: 155798, label: "Iraq" },
+			{ y: 164398, label: "UAE" }]
+			}]
+			});
+			chart.render();
+			}
+		</script>
+	</head>
+	<body>
+	<div id="chartContainer" style="height: 100%; width: 100%;"></div>
+	</body>

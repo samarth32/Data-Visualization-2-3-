@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<canvas id="mycanvas" width="2000" height="1000" style="border:1px solid green;"></canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("mycanvas");
+			var ctx=canvas.getContext("2d");
+			ctx.setLineDash([5]);//To set dash line
+			ctx.moveTo(50,50);
+			ctx.lineTo(200,100);
+			ctx.scale(10,10);
+			ctx.stroke();
+		</script>
+	</body>
+</html>

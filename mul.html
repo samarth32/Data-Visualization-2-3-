@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+		</script>
+		<script type="text/javascript">
+			google.charts.load('current', {packages: ['corechart']});
+			google.setOnLoadCallback(drawChart);
+			function drawChart() {
+				var data = google.visualization.arrayToDataTable([
+				['product', 'Sales1','Sales2','Sales3'],
+				['Shoes', 40,50,60],
+				['Hats', 50,60,70],
+				['Coats', 35,45,55],
+				['Scarves', 20,30,40] ]);
+				var options = {title : "Product Sales",
+				hAxis: { title: "Sales" },
+				vAxis: { title: "Products" }};
+				var chart = new
+				google.visualization.BarChart(document.getElementById("chart"));
+				chart.draw(data,options);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Google API Bar Chart</h1>
+		<div id="chart" style="width:500px;height:100%;margin:0"></div>
+	</body>
+</html>

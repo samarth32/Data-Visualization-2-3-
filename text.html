@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<canvas id="mycanvas" width="2000" height="1000" style="border:1px solid green;"></canvas>
+		<script type="text/javascript">
+			var canvas=document.getElementById("mycanvas");
+			var ctx=canvas.getContext("2d");
+			
+			ctx.font="20px Georgia";
+			ctx.fillText("HelloWorld",10,50);
+			ctx.font="30px Verdana";
+			//Create Gradient
+			var gradient=ctx.createLinearGradient(0,0,200,200);
+			gradient.addColorStop("0","red");
+			gradient.addColorStop("0.25","white");
+			gradient.addColorStop("0.5","gray");
+			gradient.addColorStop("1","pink");
+			//Fill with Gradient
+			ctx.fillStyle=gradient;
+			ctx.fillText("BigSmile!",10,90);
+			ctx.fillRect(100,100,300,300);
+		</script>
+	</body>
+</html>
