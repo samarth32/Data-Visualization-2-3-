@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Table with Altering Row Highlight</title>
+		<style type="text/css">
+			table{border: 1px solid black;}
+			th,td{border: 1px dotted black;}
+			th{background: #C2F0C2;padding: 5px;}
+			thead th{background: pink;}
+			caption{background: gray;padding: 5px;color: white;}
+			tfoot{background: yellow;}
+			tbody tr:nth-child(odd){background: #DBDBDB;}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>Sales By Region</caption>
+			<thead>
+				<th scope="col">Region</th>
+				<th scope="col">Sales</th>
+				<th scope="col">Mean</th>
+			</thead>
+			<tfoot>
+				<th scope="row">Sum</th>
+				<td>160</td>
+				<td>200</td>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">A</th>
+					<td>10</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td scope="row">B</td>
+					<td>30</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td scope="row">C</td>
+					<td>50</td>
+					<td>60</td>
+				</tr>
+				<tr>
+					<td scope="row">D</td>
+					<td>70</td>
+					<td>80</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

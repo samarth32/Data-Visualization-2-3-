@@ -1,0 +1,20 @@
+<html>	
+	<head>
+		<script src="jquery-3.5.0.js"></script>
+	</head>
+	<body>
+		<p>Click the button to display the value of arrays</p>
+		<button onclick="myFunction()">Tryit</button>
+		<div id="container"></div>
+		<script type="text/javascript">
+			function myFunction()
+			{
+				jQuery.get("http://127.0.0.1:8080/sample.csv",function(theData)
+				{
+					alert(theData);
+					$('#container').html(theData.replace(/\n/g,'<br>')).split(",");
+				});
+			}
+		</script>
+	</body>
+</html>

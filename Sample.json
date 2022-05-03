@@ -1,0 +1,4 @@
+{"sales":[
+		{"region":"NorthEast","employees":150,"amount":"1,50,000"},
+		{"region":"SouthWest","employees":100,"amount":"95,000"},
+		{"region":"West","employees":95,"amount":"2,65,000"}]}

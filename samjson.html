@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	</head>
+	<body>
+		<script>
+			$.getJSON("http://127.0.0.1:8080//Sample.json",function(theData){
+				$.each(theData.sales,function(k,v)
+				{
+					var r=v.region;
+					var e=v.employees;
+					var a=v.amount;
+
+					document.write("Region:"+r+"<br/><br/>");
+					document.write("Employess:"+e+"<br/><br/>");
+					document.write("Amount:"+a+"<br/><br/>");
+				});
+			});
+		</script>
+	</body>
+</html>

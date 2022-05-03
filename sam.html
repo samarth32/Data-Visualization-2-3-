@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	</head>
+	<body>
+		<script>
+			var jsonObj={"sales":[
+			{"region":"NorthEast","employees":150,"amount":"1,50,000"},
+			{"region":"SouthWest","employees":100,"amount":"95,000"},
+			{"region":"West","employees":95,"amount":"2,65,000"}]};
+
+			var a=jsonObj.sales[0].amount;
+			var r=jsonObj.sales[0].region;
+			var e=jsonObj.sales[0].employees;
+			// alert("The amount:"+a);
+
+			document.write("Region:"+r+"<br/><br/>");
+			document.write("Employess:"+e+"<br/><br/>");
+			document.write("Amount:"+a+"<br/><br/>");
+		</script>
+	</body>
+</html>
